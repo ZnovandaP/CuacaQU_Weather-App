@@ -1,0 +1,58 @@
+body {
+	overflow-x: hidden;
+}
+
+.brand:hover {
+	text-decoration: underline;
+}
+
+.list-menu li {
+	margin-left: 10px;
+}
+
+.list-menu a {
+	position: relative;
+}
+
+.list-menu a::after {
+	content: "";
+	display: block;
+	height: 5px;
+	width: 0;
+	border-radius: 5px;
+	position: absolute;
+	left: 2px;
+	background-color: #dff6ff;
+	transition: all 0.5s;
+}
+
+.list-menu a:hover::after {
+	width: 100%;
+}
+
+.dark-icon {
+	width: 2rem;
+	height: 2rem;
+	cursor: pointer;
+	margin-top: -3px;
+	transition: all 0.3s;
+}
+
+.dark-icon:hover {
+	background-color: #051e2e;
+}
+
+/* jumbotron / heroes style */
+.b-example-divider {
+	height: 3rem;
+	background-color: rgba(0, 0, 0, 0.1);
+	border: solid rgba(0, 0, 0, 0.15);
+	border-width: 1px 0;
+	box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 992px) {
+	.rounded-lg-3 {
+		border-radius: 0.3rem;
+	}
+}
